@@ -43,7 +43,7 @@ if [ "$CONFIG_FIRMWARE_INCLUDE_SFE" = "y" ] ; then
 fi
 
 # call depmod
-sudo $depmod_bin -ae -F System.map -b "${INSTALL_MOD_PATH}" -r ${KERNELRELEASE}
+$depmod_bin -ae -F System.map -b "${INSTALL_MOD_PATH}" -r ${KERNELRELEASE}
 
 # clear unneeded depmod files
 rm -f "${INSTALL_MOD_PATH}/lib/modules/${KERNELRELEASE}/modules.alias"
