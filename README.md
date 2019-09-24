@@ -58,6 +58,8 @@ Contributors of this project are not responsible for what happens next.
 >- [mtr](https://github.com/traviscross/mtr) ```CONFIG_FIRMWARE_INCLUDE_MTR```
 >- [socat](http://www.dest-unreach.org/socat) ```CONFIG_FIRMWARE_INCLUDE_SOCAT```
 >- [srelay](https://socks-relay.sourceforge.io) ```CONFIG_FIRMWARE_INCLUDE_SRELAY```
+>- [mentohust](https://github.com/hanwckf/mentohust) ```CONFIG_FIRMWARE_INCLUDE_MENTOHUST```
+
 - 已适配除官方适配外的以下机型
 >- WR1200JS (128M,USB)
 >- NEWIFI3 (512M,USB)
@@ -67,11 +69,13 @@ Contributors of this project are not responsible for what happens next.
 >- MZ-R13P (64M)
 >- HC5661A (128M)
 >- OYE-001 (128M,USB)
->- MI-MINI (未测试,128M,USB)
->- MI-3 (未测试,128M,USB)
->- 5K-W20 (未测试,64M,USB)
+>- MI-MINI (128M,USB)
+>- MI-3 (128M,USB)
+>- 5K-W20 (64M,USB)
 >- JCG-AC860M (256M,USB)
 >- DIR-882 (128M,USB)
+>- RT-AC1200GU (128M,USB)
+>- XY-C1 (512M,USB)
 
 ***
 
