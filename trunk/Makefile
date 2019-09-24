@@ -16,6 +16,8 @@ VERSIONPKG = 1.1
 include .config
 include versions.inc
 
+ROOTDIR        = $(shell pwd)
+
 ifeq ($(CONFIG_WITHOUT_KERNEL),y)
 all: tools unpack_trx libc_only libs_only user_only romfs image
 else
@@ -58,6 +60,8 @@ HOST_NCPU	= $(shell if [ -f /proc/cpuinfo ]; then n=`grep -c processor /proc/cpu
 CONFIG_SHELL := $(shell if [ -x "$$BASH" ]; then echo $$BASH; \
 	  else if [ -x /bin/bash ]; then echo /bin/bash; \
 	  else echo sh; fi ; fi)
+
+CONFIG_TOOLCHAIN_DIR=$(ROOTDIR)/../toolchain-mipsel
 
 ifneq ($(findstring linux-3.0,$(LINUXDIR)),)
 FIRMWARE_KERNEL_VER="3.0"
